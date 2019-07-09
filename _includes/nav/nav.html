@@ -1,0 +1,5 @@
+{% for item in site.data.nav %}
+    <li {% if item.url == page.url %}class="active"{% endif %}>
+        <a href="{% unless page.layout == "default" %}{{ baseurl }}/{% endunless %}{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary">{{ item.title }}</a>
+    </li>
+{% endfor %}

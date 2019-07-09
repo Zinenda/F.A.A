@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+    {% include head.html %}
+    <body>
+        {% include nav/navbar.html %}
+        {% include nav/sidenav.html %}
+
+        <main class="animate-bottom">
+            {{ content }}
+        </main>
+
+        {% include fab.html %}
+        
+        {% include footer.html %}
+        
+        {% include fonts.html %}
+        {% include scripts.html %}
+    </body>
+</html>

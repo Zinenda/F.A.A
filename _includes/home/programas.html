@@ -1,0 +1,27 @@
+<section class="section scrollspy" id="programas">
+    <div class="container">
+        <h4 class="bolder primary-color-text">Programas</h4>
+    </div>
+        <div class="row center">
+            <div class="col s12">
+                <ul class="tabs">
+                    {% for item in site.programas %}
+                        <li class="tab">
+                            <a href="#programas{{ forloop.index }}">
+                                <i class="fas fa-{{ item.icon }}"></i> {{ item.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            {% for item in site.programas %}
+                <div class="col s12" id="programas{{ forloop.index }}">
+                    <div class="container light text-justified">
+                        {{ item.content }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    
+</section>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import
+    "base",
+    "animate-bottom",
+    "materialize",
+    "page-header",
+    "mygrid"
+;
+
+nav {
+    .nav-wrapper {
+        a.brand-logo {
+            svg {
+                width: 80px;
+                height: auto;
+            }
+        }
+    }
+
+    .sidenav {
+        a {
+            svg {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

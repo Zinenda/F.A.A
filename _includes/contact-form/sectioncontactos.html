@@ -1,0 +1,45 @@
+<section id="contactos" class="section scrollspy">
+    <div class="container">
+        <h4 class="bolder primary-color-text">Contactos</h4>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="video-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.152530315743!2d40.49323941486419!3d-12.962089863130323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18bfc8c1d5725ed7%3A0x3f9a1eeafe3916a0!2sAvenida+25+De+Setembro%2C+Pemba!5e0!3m2!1spt-PT!2smz!4v1561969378575!5m2!1spt-PT!2smz" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col s12 l6">
+                {% include contact-form/form.html %}
+            </div>
+        </div>
+    </div>
+    <section class="secondary-color white-text center">
+        <ul class="section-grid">
+            <li style="padding-top: 10px;">
+                <span class="fa-stack fa-1x primary-color-text">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+                <br>
+                 Telefone: <a href="tel:+27221738" class="white-text">+27 221 738</a>
+            </li>
+            <li style="padding-top: 10px;">
+                <span class="fa-stack fa-1x primary-color-text">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <br>
+                <a href="mailto:{{ site.email }}" class="white-text">{{ site.email }}</a>
+            </li>
+            <li style="padding-top: 10px;">
+                <span class="fa-stack fa-1x primary-color-text">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <br>
+                Av. 25 de Setembro, Bairro Cimento nº 2235 <br>
+                Cidade de Pemba, Cabo Delgado, Moçambique
+            </li>
+        </ul>
+    </section>
+</section>
