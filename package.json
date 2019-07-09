@@ -1,0 +1,12 @@
+{
+  "name": "F.A.A",
+  "version": "1.0.0",
+  "description": "Fundacao Apoio Amigo",
+  "main": "index.js",
+  "repository": "https://github.com/Zinenda/F.A.A.git",
+  "author": "Ivo Zinenda <izinenda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
