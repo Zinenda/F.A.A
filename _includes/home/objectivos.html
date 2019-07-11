@@ -1,0 +1,17 @@
+<section class="section scrollspy center" id="objectivos">
+    <div class="container">
+        <h4 class="primary-color-text bolder">Objectivos</h4>
+        <span class="thin">
+            O principal objectivo da FAA definidos nos seus estatutos é de contríbuir para o desenvolvimento sócio-económico das comunidades através de:
+        </span>
+
+        <div class="slick-objectivos">
+            {% for item in site.objectivos %}
+                <div>
+                    <img src="{{ item.image }}?nf_resize&fit&w=320" alt="{{ item.title }}">
+                    <p class="bolder primary-color-text">{{ item.title }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
