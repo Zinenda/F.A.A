@@ -6,3 +6,5 @@ lang: pt
 {% include home/slider.html %}
 
 {% include home/sobre.html %}
+
+{% include home/sectionDoar.html %}
