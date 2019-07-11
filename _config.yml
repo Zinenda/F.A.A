@@ -19,6 +19,7 @@ plugins:
 collections_dir: collections
 collections:
   sobre:
+  objectivos:
 
 sass:
   sass_dir: assets/_sass

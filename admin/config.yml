@@ -17,3 +17,12 @@ collections:
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
+
+  - label: "Objectivos"
+    name: "objectivos"
+    folder: "collections/_objectivos"
+    create: true
+    fields:
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown", required: "false"}
