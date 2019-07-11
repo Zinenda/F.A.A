@@ -25,7 +25,7 @@ collections:
     fields:
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Conteúdo", name: "body", widget: "markdown", required: "false"}
+      - {label: "Conteúdo", name: "body", widget: "markdown", required: false}
 
   - label: "Noticias"
     name: "noticias"
