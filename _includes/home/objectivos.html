@@ -8,7 +8,7 @@
         <div class="slick-objectivos">
             {% for item in site.objectivos %}
                 <div>
-                    <img src="{{ item.image }}?nf_resize&fit&w=320" alt="{{ item.title }}">
+                    <img src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}">
                     <p class="bolder primary-color-text">{{ item.title }}</p>
                 </div>
             {% endfor %}

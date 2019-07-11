@@ -20,6 +20,7 @@ collections_dir: collections
 collections:
   sobre:
   objectivos:
+  galeria:
 
 sass:
   sass_dir: assets/_sass

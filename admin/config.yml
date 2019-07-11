@@ -41,3 +41,11 @@ collections:
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Fotografia", name: "image", widget: "image"}
       - {label: "Artigo", name: "body", widget: "markdown"}
+
+  - label: "Galeria"
+    name: "galeria"
+    folder: "collections/_galeria"
+    create: true
+    fields:
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Titulo", name: "title", widget: "string"}

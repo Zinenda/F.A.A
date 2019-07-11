@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$('.slider').slider({
 		height: 600
 	});
+	$('.materialboxed').materialbox();
 	$('.carousel').carousel();
 	$('.tabs').tabs();
 	$('.scrollspy').scrollSpy();
