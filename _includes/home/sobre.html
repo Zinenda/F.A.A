@@ -1,6 +1,16 @@
-<section class="section scrollspy" id="sobre">
+<section class="section scrollspy no-pad" id="sobre">
     <div class="container">
         <div class="row">
+            <article class="col s12 l7">
+                {% for item in site.sobre limit: 1 %}
+                    <h4 class="bolder primary-color-text">{{ item.title }}</h4>
+
+                    <div class="thin text-justified">
+                        {{ item.content }}
+                    </div>
+                {% endfor %}
+            </article>
+
             <section class="col s12 l5">
                 <div class="col s12 l6">
                     <img src="" alt="">
@@ -14,16 +24,6 @@
                     <img src="" alt="">
                 </div>
             </section>
-
-            <article class="col s12 l7">
-                {% for item in site.sobre limit: 1 %}
-                    <h4 class="bolder primary-color-text">{{ item.title }}</h4>
-
-                    <div class="thin text-justified">
-                        {{ item.content }}
-                    </div>
-                {% endfor %}
-            </article>
         </div>
     </div>
 </section>

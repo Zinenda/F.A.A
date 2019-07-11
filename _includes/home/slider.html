@@ -2,32 +2,28 @@
     <ul class="slides">
         {% for item in site.sobre offset: 1 limit: 3 %}
             <li>
-                <img src="{{ item.image }}?nf_resize&smartcrop&h=600">
-                <div class="caption right white-text">
-                    <div class="container">
-                        <div class="card-panel" style="background: rgba(1, 24, 38, 0.5);">
-                            <h4 class="bolder">{{ item.title }}</h4>
-                            <div class="thin right">
-                                {{ item.content }}
-                            </div>
+                <img src="{{ item.image }}?nf_resize=smartcrop&h=600" alt="{{ item.title }}">
+                <div class="caption">
+                    <div class="card-panel" style="background-color: rgba(1, 24, 38, 0.8); width: 40%;">
+                        <h4 class="bolder">{{ item.title }}</h4>
+                        <div class="thin">
+                            {{ item.content }}
                         </div>
                     </div>
                 </div>
             </li>
         {% endfor %}
 
-        {% for item in site.sobre limit: 1 %}
+        {% for item in site.posts limit: 1 %}
             <li>
-                <img src="{{ item.image }}?nf_resize&smartcrop&h=600">
-                <div class="caption right white-text">
-                    <div class="container">
-                        <div class="card-panel" style="background: rgba(1, 24, 38, 0.5);">
-                            <h4 class="bolder">{{ item.title }}</h4>
-                            <div class="thin right">
-                                {{ item.content | truncatewords: 10 }}
-                            </div>
-                            <a href="{{ item.url }}" title="{{ item.title }}" class="btn-flat waves-effect waves-primary">Leia Mais</a>
+                <img src="{{ item.image }}?nf_resize=smartcrop&h=600" alt="{{ item.title }}">
+                <div class="caption">
+                    <div class="card-panel" style="background-color: rgba(1, 24, 38, 0.8); width: 40%;">
+                        <h4 class="bolder">{{ item.title }}</h4>
+                        <div class="thin">
+                            {{ item.content | truncatewords: 20 }}
                         </div>
+                        <a href="{{ item.url }}" title="{{ item.title }}" class="btn-flat waves-effect waves-primary" style="border: solid 1px #fff; border-radius: 20px;">Leia Mais</a>
                     </div>
                 </div>
             </li>

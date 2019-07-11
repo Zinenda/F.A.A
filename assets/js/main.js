@@ -5,8 +5,6 @@ $(document).ready(function(){
 		height: 600
 	});
 	$('.materialboxed').materialbox();
-	$('.carousel').carousel();
-	$('.tabs').tabs();
 	$('.scrollspy').scrollSpy();
 	$('.fixed-action-btn').floatingActionButton();
 });
