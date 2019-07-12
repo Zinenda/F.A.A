@@ -1,29 +1,23 @@
 <section class="section scrollspy" id="sobre">
-    <div class="container">
-        <div class="row">
-            <article class="col s12 l8">
+    <div class="row">
+        <article class="col s12 l7">
+            <div class="container">
                 {% for item in site.sobre limit: 1 %}
                     <h4 class="bolder primary-color-text">{{ item.title }}</h4>
-                    <p class="bolder">{{ site.description | upcase }}</p>
-                    <div class="thin text-justified">
+                    <h5>{{ site.description | upcase }}</h5>
+                    <div class="light text-justified">
                         {{ item.content }}
                     </div>
                 {% endfor %}
-            </article>
+            </div>
+        </article>
 
-            <section class="col s12 l4">
-                <div class="col s12">
-                    <img src="" alt="">
-                </div>
-
-                <div class="col s12 l6">
-                    <img src="" alt="">
-                </div>
-
-                <div class="col s12 l6">
-                    <img src="" alt="">
-                </div>
-            </section>
-        </div>
+        <section class="col s12 l5">
+            <div class="section-grid">
+                {% for item in site.sobre reversed offset: 1 limit: 3 %}
+                    <img src="{{ item.image }}?nf_resize=smartcrop&w=100" width="100" alt="" class="materialboxed">
+                {% endfor %}
+            </div>
+        </section>
     </div>
 </section>
