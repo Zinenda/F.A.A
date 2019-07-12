@@ -49,3 +49,5 @@ collections:
     fields:
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
+
+  
