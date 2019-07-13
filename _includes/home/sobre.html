@@ -14,10 +14,13 @@
 
         <section class="col s12 l5">
             <div class="section-grid">
-                {% for item in site.sobre reversed offset: 1 limit: 3 %}
-                    <img src="{{ item.image }}?nf_resize=smartcrop&w=100" width="100" alt="" class="materialboxed">
+                {% for item in site.sobre reversed offset: 1 limit: 2 %}
+                    <img src="{{ item.image }}?nf_resize=smartcrop&w=100" alt="" class="materialboxed">
                 {% endfor %}
-            </div>
+            </div><br>
+            {% for item in site.sobre reversed offset: 2 limit: 1 %}
+                <img src="{{ item.image }}?nf_resize=smartcrop&w=200" alt="" class="materialboxed">
+            {% endfor %}
         </section>
     </div>
 </section>
