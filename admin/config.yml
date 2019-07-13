@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 
-media_folder: 'assets/uploads'
+media_folder: 'assets/img/uploads'
 
 site_url: https://faa.org.mz
 logo_url: https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg
@@ -14,8 +14,8 @@ collections:
     folder: "collections/_sobre"
     create: true
     fields:
-      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
   - label: "Objectivos"
