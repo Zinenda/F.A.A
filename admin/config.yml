@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  use_large_media_transforms_in_media_library: false
 
 media_folder: 'assets/img/uploads'
 
@@ -23,8 +24,8 @@ collections:
     folder: "collections/_objectivos"
     create: true
     fields:
-      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Conteúdo", name: "body", widget: "markdown", required: false}
 
   - label: "Noticias"
@@ -47,7 +48,7 @@ collections:
     folder: "collections/_galeria"
     create: true
     fields:
-      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
 
   
