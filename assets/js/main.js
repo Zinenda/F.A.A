@@ -6,5 +6,6 @@ $(document).ready(function(){
 	});
 	$('.materialboxed').materialbox();
 	$('.scrollspy').scrollSpy();
+	$('.parallax').parallax();
 	$('.fixed-action-btn').floatingActionButton();
 });
