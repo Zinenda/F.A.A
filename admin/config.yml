@@ -16,7 +16,7 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "file"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
   - label: "Objectivos"
@@ -25,7 +25,7 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "file"}
       - {label: "Conteúdo", name: "body", widget: "markdown", required: false}
 
   - label: "Noticias"
@@ -40,7 +40,7 @@ collections:
       - {label: "Categoria", name: "category", default: "noticias", widget: "hidden"}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Fotografia", name: "image", widget: "image"}
+      - {label: "Fotografia", name: "image", widget: "file"}
       - {label: "Artigo", name: "body", widget: "markdown"}
 
   - label: "Galeria"
@@ -49,7 +49,7 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Imagem", name: "image", widget: "file"}
 
   - label: "Parceiros"
     name: "parceiros"
@@ -64,6 +64,6 @@ collections:
           - {label: "Empresa", name: "company", widget: "string"}
           - label: "Logotipo"
             name: "image"
-            widget: "image"
+            widget: "file"
 
   
