@@ -51,4 +51,19 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
 
+  - label: "Parceiros"
+    name: "parceiros"
+    folder: "collections/_parceiros"
+    create: true
+    fields:
+      - {label: "Parceiros", name: "title", default: "Parceiros", widget: "string"}
+      - label: "Parceiro"
+        name: "parceiro"
+        widget: "list"
+        fields:
+          - {label: "Empresa", name: "company", widget: "string"}
+          - label: "Logotipo"
+            name: "image"
+            widget: "image"
+
   

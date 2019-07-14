@@ -4,7 +4,7 @@ $('.slick-objectivos').slick({
   slidesToScroll: 3
 });
 
-$('.slick-clientes').slick({
+$('.slick-parceiros').slick({
   dots: false,
   infinite: true,
   autoplay: true,
