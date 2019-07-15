@@ -14,7 +14,7 @@
             </li>
         {% endfor %}
 
-        {% for item in site.posts limit: 1 %}
+        {% for item in site.categories.noticias limit: 1 %}
             <li>
                 <img src="{{ item.image }}?nf_resize=smartcrop&h=600" alt="{{ item.title }}">
                 <div class="caption">

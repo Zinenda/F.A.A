@@ -1,0 +1,9 @@
+{% for post in site.related_posts limit: 3 %}
+    <div class="card-panel hoverable">
+        <p class="bolder">{{ post.title }}</p>
+        <div class="thin text-justified">
+            {{ post.content | truncatewords: 20 }}
+        </div>
+        <a href="{{ post.url }}" title="{{ post.title }}">Leia Mais</a>
+    </div>
+{% endfor %}

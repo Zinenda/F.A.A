@@ -1,0 +1,6 @@
+<header class="container">
+    <h4 class="bolder">{{ page.title }}</h4>
+    {% if page.category == "noticias" %}
+        <img src="{{ page.image }}?nf_resize=fit&w=460 1x" srcset="{{ page.image }}?nf_resize=fit&w=720 2x" alt="{{ post.title }}">
+    {% endif %}
+</header>

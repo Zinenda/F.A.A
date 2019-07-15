@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include posts_layout/header.html %}
+
+<section class="section row">
+    <div class="container">
+        <article class="col s12 l8 white grey-text text-darken-4">
+            <div class="card-panel text-justified">
+                {{ content }}
+    
+                {% include posts_layout/pagination.html %}
+            </div>
+        </article>
+    
+        <div class="hide-on-small-only col l4">
+            {% include posts_layout/related_posts.html %}
+        </div>
+    </div>
+</section>

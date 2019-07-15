@@ -1,0 +1,13 @@
+<div class="center">
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="btn-floating waves-effect waves-circle waves-light">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+    {% endif %}
+                
+    {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="btn-floating waves-effect waves-circle waves-light">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    {% endif %}
+</div>

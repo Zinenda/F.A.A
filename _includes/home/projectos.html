@@ -4,11 +4,11 @@
 
         <div class="section-grid">
             {% for item in site.categories.projectos limit: 3 %}
-                <article class="card-panel white-text z-depth-3 hoverable">
+                <article class="card-panel white-text z-depth-3 hoverable" style="background-color: rgb(1, 24, 38);">
                     <p class="bolder">{{ item.title }}</p>
                     <span class="light grey-text text-lighten-1">Publicado {{ item.date | date_to_string }}</span>
                     <div class="light text-justified">
-                        {{ item.content | truncatewrds: 20 }}
+                        {{ item.content | truncatewords: 20 }}
                     </div>
                     <a href="{{ item.url }}" title="{{ item.title  }}">Leia Mais</a>
                 </article>

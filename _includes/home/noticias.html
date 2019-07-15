@@ -3,7 +3,7 @@
         <h4 class="bolder primary-color-text">Noticias</h4>
 
         <section class="section-grid">
-            {% for post in site.posts limit: 3 %}
+            {% for post in site.categories.noticias limit: 3 %}
                 <article class="card medium hoverable">
                     <div class="card-image">
                         <img src="{{ post.image }}?nf_resize=fit&w=200" alt="{{ post.title }}">
