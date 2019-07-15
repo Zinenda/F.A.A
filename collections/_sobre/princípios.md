@@ -1,6 +1,6 @@
 ---
 title: Princípios
-image: /assets/img/uploads/img_9930.jpg
+image: /assets/uploads/img_9934.jpg
 ---
 Competência através da racionalização do custo-benefício de recursos para alcançar as metas.
 
