@@ -1,0 +1,20 @@
+<section class="section scrollspy" id="projectos">
+    <div class="container">
+        <h4 class="center-align bolder primary-color-text">Projectos</h4>
+
+        <div class="section-grid">
+            {% for item in site.categories.projectos limit: 3 %}
+                <article class="card-panel white-text z-depth-3 hoverable">
+                    <p class="bolder">{{ item.title }}</p>
+                    <span class="light grey-text text-lighten-1">Publicado {{ item.date | date_to_string }}</span>
+                    <div class="light text-justified">
+                        {{ item.content | truncatewrds: 20 }}
+                    </div>
+                    <a href="{{ item.url }}" title="{{ item.title  }}">Leia Mais</a>
+                </article>
+            {% endfor %}
+        </div>
+
+        <a href="/projectos/" title="Projectos" class="btn-large waves-effect waves-light">Veja Mais</a>
+    </div>
+</section>

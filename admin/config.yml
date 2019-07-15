@@ -43,6 +43,20 @@ collections:
       - {label: "Fotografia", name: "image", widget: "image"}
       - {label: "Artigo", name: "body", widget: "markdown"}
 
+  - label: "Projectos"
+    name: "projectos"
+    folder: "collections/_posts/projectos"
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Categoria", name: "category", default: "projectos", widget: "hidden"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Artigo", name: "body", widget: "markdown"}
+
   - label: "Galeria"
     name: "galeria"
     folder: "collections/_galeria"
