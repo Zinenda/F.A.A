@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="section">
+    <div class="container">
+        <section class="section-grid">
+            {% for post in paginator.posts %}
+                <article class="card-panel hoverable" {% if page.title == "Projectos" %}style="background-color: rgb(1, 24, 38); color: #fff;"{% endif %}>
+                    <p class="bolder">{{ post.title }}</p>
+                    
+                    <span class="light grey-text text-lighten-1">Publicado {{ post.date | date_to_string }}</span>
+
+                    <div class="light">
+                        {{ post.content | truncatewords: 20 }}
+                    </div>
+
+                    <a href="{{ post.url }}" title="{{ post.title  }}">Leia Mais</a>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+</section>
