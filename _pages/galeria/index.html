@@ -1,0 +1,23 @@
+---
+title: Galeria
+layout: default
+pagination:
+    enabled: true
+    collection: galeria
+---
+
+<section class="section">
+    <div class="container">
+        <div id="masonry-grid" class="row">
+            {% for item in paginator.posts %}
+                <div class="col s6 l3">
+                    <a href="{{ item.image }}" data-lightbox="{{ page.title }}" data-title="{{ item.title }}" data-alt="{{ item.title }}">
+                        <img src="{{ item.image }}?nf_resize=fit&w=200 1x" srcset="{{ item.image }}?nf_resize=fit&w=320 2x">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% include pagination.html %}
+    </div>
+</section>

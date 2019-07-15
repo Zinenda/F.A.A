@@ -29,4 +29,11 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	var $container = $('#masonry-grid');
+    // initialize
+    $container.masonry({
+      columnWidth: '.col',
+      itemSelector: '.col',
+    });
 });
