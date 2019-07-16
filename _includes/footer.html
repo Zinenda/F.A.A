@@ -1,7 +1,26 @@
-<footer class="primary-color-dark white-text">
-    <div class="container center">
-        &copy;{{ site.time | date: "%Y" }} {{ site.title }} - {{ site.description }}
-        <br>
-        <span class="thin">Desenvolvido por <a href="https://izitech.co" class="white-text">IZITech</a></span>
+<footer class="page-footer white-text">
+    <div class="container">
+        <div class="section-grid">
+            <article>
+                <span class="light">Contacte-nos para mais informações</span>
+
+                <p class="bolder"><a href="tel:+258 82 755 4800" class="white-text">+258 82 755 4800</a> <br> <a href="mailto:{{ site.email }}" class="white-text">{{ site.email }}</a></p>
+            </article>
+
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.faamoz.org%2F&width=146&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=1034422419934923" width="146" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+            <article>
+                <span class="light">Localize-nos</span>
+
+                <p class="bolder">Rua da Unidade Africana, Tete - Moçambique</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="footer-copyright center">
+        <div class="container">
+            &copy; {{ site.description }} | Todos Direitos Reservados <br>
+            <span class="light">Desenvolvido pela <a href="https://izitech.co" class="white-text">IZITech</a></span>
+        </div>
     </div>
 </footer>
