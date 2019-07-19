@@ -6,7 +6,6 @@ $(document).ready(function(){
 	});
 	$('.materialboxed').materialbox();
 	$('.scrollspy').scrollSpy();
-	$('.carousel').carousel();
 	$('.fixed-action-btn').floatingActionButton();
 
 	$('.owl-carousel').owlCarousel({
