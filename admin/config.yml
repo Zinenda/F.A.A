@@ -10,13 +10,28 @@ logo_url: https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56
 show_preview_links: false
 
 collections:
+  - label: "Slider"
+    name: "slider"
+    folder: "collections/_slider"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - label: "Perfil"
+    name: "perfil"
+    folder: "collections/_perfil"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Documento PDF", name: "perfil", widget: "file"}
+  
   - label: "Sobre"
     name: "sobre"
     folder: "collections/_sobre"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
   - label: "Objectivos"

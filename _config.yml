@@ -18,7 +18,9 @@ plugins:
 # Collections
 collections_dir: collections
 collections:
+  slider:
   sobre:
+  perfil:
   objectivos:
   galeria:
   parceiros:
@@ -26,6 +28,8 @@ collections:
 sass:
   sass_dir: assets/_sass
   style: compressed
+
+image: /assets/img/logotipo.png
 
 pagination:
   enabled: true

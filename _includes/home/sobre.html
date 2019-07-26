@@ -3,7 +3,7 @@
         <div class="row">
             <article class="col s12 l8">
                 {% for item in site.sobre limit: 1 %}
-                    <h4 class="bolder primary-color-text">{{ site.description | upcase }}</h4>
+                    <h5 class="bolder primary-color-text">{{ site.description | upcase }}</h5>
                     <div class="light text-justified">
                         {{ item.content }}
                     </div>
@@ -11,12 +11,39 @@
             </article>
 
             <section class="col s12 l4">
-                <div class="section-grid">
-                    {% for item in site.sobre limit: 1 %}
-                        <img src="{{ item.image }}" alt="{{ site.title }}" class="materialboxed">
-                    {% endfor %}
-                </div>  
+                {% for item in site.sobre offset: 1 limit: 2 %}
+                    <div class="card-panel white-text hoverable" style="background-color: #011826;">
+                        <p class="bolder">{{ item.title }}</p>
+
+                        <div class="light text-justified">
+                            {{ item.content }}
+                        </div>
+                    </div>
+                {% endfor %}  
             </section>
+        </div>
+
+        <div class="center">
+            <a href="#sobreModal" class="btn-large waves-effect waves-light modal-trigger">Saiba Mais</a>
+            {% for item in site.perfil limit: 1 %}
+                <a href="{{ item.perfil }}" title="{{ item.title }}" class="btn-flat btn-large waves-effect waves-light"><i class="far fa-file-pdf"></i> Nosso Perfil</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="sobreModal" class="modal">
+    <div class="modal-content">
+        <div class="section-grid">
+            {% for item in site.sobre offset: 3 %}
+                <div class="card-panel white-text hoverable" style="background-color: #011826;">
+                    <p class="bolder">{{ item.title }}</p>
+
+                    <div class="light text-justified">
+                        {{ item.content }}
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -1,31 +1,8 @@
 <div class="slider">
     <ul class="slides">
-        {% for item in site.sobre offset: 1 limit: 3 %}
+        {% for item in site.slider limit: 4 %}
             <li>
                 <img src="{{ item.image }}" alt="{{ item.title }}">
-                <div class="caption">
-                    <div class="card-panel" style="background-color: rgba(1, 24, 38, 0.8);">
-                        <p class="bolder">{{ item.title }}</p>
-                        <div class="light">
-                            {{ item.content }}
-                        </div>
-                    </div>
-                </div>
-            </li>
-        {% endfor %}
-
-        {% for item in site.categories.noticias limit: 1 %}
-            <li>
-                <img src="{{ item.image }}" alt="{{ item.title }}">
-                <div class="caption">
-                    <div class="card-panel" style="background-color: rgba(1, 24, 38, 0.8);">
-                        <p class="bolder">{{ item.title }}</p>
-                        <div class="light">
-                            {{ item.content | truncatewords: 20 }}
-                        </div>
-                        <a href="{{ item.url }}" title="{{ item.title }}" class="btn-flat waves-effect waves-primary" style="border: solid 1px #fff; border-radius: 20px;">Leia Mais</a>
-                    </div>
-                </div>
             </li>
         {% endfor %}
     </ul>
