@@ -1,13 +1,13 @@
 <section id="parceiros" class="section scrollspy">
-    <h4 class="center primary-color-text bolder">Parceiros</h4>
+    <h5 class="center primary-color-text bolder">Parceiros</h5>
 
-    <div class="row owl-carousel">
-       <section class="container">
-        {% for item in site.parceiros.first.parceiro %}
-            <div>
-                <img src="{{ item.image }}?nf_resize=fit&w=80" alt="{{ item.company }}" style="filter: greyscale(100%); width: 80px">
-            </div>
-        {% endfor %}
-       </section>
+    <div class="container">
+        <div class="owl-carousel">
+            {% for item in site.parceiros.first.parceiro %}
+                <div>
+                    <img src="{{ item.image }}?nf_resize=fit&w=80" alt="{{ item.company }}" style="width: 80px">
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </section>

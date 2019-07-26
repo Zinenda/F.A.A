@@ -8,48 +8,6 @@
     "mygrid"
 ;
 
-nav {
-    .nav-wrapper {
-        a.brand-logo {
-            svg {
-                width: 80px;
-                height: auto;
-            }
-        }
-    }
-
-    .sidenav {
-        a {
-            svg {
-                max-width: 100%;
-                height: auto;
-            }
-        }
-    }
-}
-
 .btn {
     border-radius: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-}
-
-@media #{$large-and-up} {
-    .slider {
-        ul.slides {
-            .caption {
-                width: 40%;
-            }
-        }
-
-        ul.indicators {
-            .indicator-item {
-                &.active {
-                    background-color: $primary-color;
-                }
-            }
-        }
-    }
 }

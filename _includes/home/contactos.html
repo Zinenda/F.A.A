@@ -1,20 +1,14 @@
 <section class="modal" id="contactos">
-    <div class="modal-content">
-        <div>
-            <h4 class="bolder primary-color-text center-align">Contacte-nos</h4>
+    <div class="container modal-content">
+        <h5 class="bolder primary-color-text center-align">Contacte-nos</h5>
 
-            <div class="section-grid">
-                <form action="post" netlify name="contacte-nos" class="row">
-                        {% include contact-form/name.html %}
-                        {% include contact-form/email.html %}
-                        {% include contact-form/telephone.html %}
-                        {% include contact-form/subject.html %}
-                        {% include contact-form/message.html %}
-                        {% include contact-form/submit.html %}
-                </form>
-
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.faamoz.org%2F&width=146&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=1034422419934923" width="146" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </div>
+        <form action="post" netlify name="contacte-nos" class="row">
+            {% include contact-form/name.html %}
+            {% include contact-form/email.html %}
+            {% include contact-form/telephone.html %}
+            {% include contact-form/subject.html %}
+            {% include contact-form/message.html %}
+            {% include contact-form/submit.html %}
+        </form>
     </div>
 </section>
