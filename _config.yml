@@ -30,6 +30,7 @@ sass:
   style: compressed
 
 image: /assets/img/logotipo.png
+color: "#011826"
 
 pagination:
   enabled: true

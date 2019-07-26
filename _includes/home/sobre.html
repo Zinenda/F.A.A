@@ -12,7 +12,7 @@
 
             <section class="col s12 l4">
                 {% for item in site.sobre offset: 1 limit: 2 %}
-                    <div class="card-panel white-text hoverable" style="background-color: #011826;">
+                    <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
                         <p class="bolder">{{ item.title }}</p>
 
                         <div class="light text-justified">
@@ -36,7 +36,7 @@
     <div class="modal-content">
         <div class="section-grid">
             {% for item in site.sobre offset: 3 %}
-                <div class="card-panel white-text hoverable" style="background-color: #011826;">
+                <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
                     <p class="bolder">{{ item.title }}</p>
 
                     <div class="light text-justified">

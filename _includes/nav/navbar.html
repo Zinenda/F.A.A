@@ -46,7 +46,7 @@
 {% for item in site.sobre offset: 1 %}
     <div id="{{ forloop.index }}" class="modal">
         <div class="container modal-content">
-            <div class="card-panel white-text hoverable" style="background-color: #011826;">
+            <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
                 <p class="bolder">{{ item.title }}</p>
 
                 <div class="light text-justified">
