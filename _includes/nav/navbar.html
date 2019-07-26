@@ -2,16 +2,57 @@
     <nav>
         <div class="nav-wrapper">
             <div class="container">
-                <a href="/" class="brand-logo bolder" title="{{ site.title }}">{{ site.title }}</a>
+                <a href="/" class="brand-logo bolder" title="{{ site.title }}">
+                    <img src="{{ site.image }}" style="width: 80px; padding-top: 10px;" alt="{{ site.title }}">
+                </a>
+                
                 <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
 
                 <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="/" title="Página Ínicial"><i class="fas fa-home"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="sobreDropdown">
+                            Sobre <i class="fas fa-xs fa-chevron-down"></i>
+                        </a>
+                    </li>
+
                     {% include nav/nav.html %}
+
                     <li>
                         <a href="#doar" title="Doe" class="btn waves-effect waves-light modal-trigger">Doe</a>
                     </li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 </div>
+
+<ul id="sobreDropdown" class="dropdown-content">
+    <li>
+        <a href="#sobre" title="Quem Somos" class="waves-effect waves-light">Quem Somos</a>
+    </li>
+
+    {% for item in site.sobre offset: 1 %}
+        <li>
+            <a href="#{{ forloop.index }}" class="modal-trigger waves-effect waves-light">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% for item in site.sobre offset: 1 %}
+    <div id="{{ forloop.index }}" class="modal">
+        <div class="container modal-content">
+            <div class="card-panel white-text hoverable" style="background-color: #011826;">
+                <p class="bolder">{{ item.title }}</p>
+
+                <div class="light text-justified">
+                    {{ item.content }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
