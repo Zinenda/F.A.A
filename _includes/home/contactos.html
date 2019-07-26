@@ -1,29 +1,19 @@
-<section class="section scrollspy" id="contactos">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.2313925852386!2d33.58562071491317!3d-16.157013336282624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1926478e2471be65%3A0xe623b68f9b3fa44e!2sFUNDA%C3%87%C3%83O+APOIO+AMIGO+-+FAA!5e0!3m2!1spt-PT!2smz!4v1562826333842!5m2!1spt-PT!2smz" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
-    <div class="container">
-        <h4 class="bolder primary-color-text center-align">Contacte-nos</h4>
-        
-        <div class="row">
-            <div class="col s12 l4">
-                <p><i class="fas fa-map-marker-alt"></i> Endereço:</p>
-                <p class="light">Rua da Unidade Africana, Tete</p>
+<section class="modal" id="contactos">
+    <div class="modal-content">
+        <div>
+            <h4 class="bolder primary-color-text center-align">Contacte-nos</h4>
 
-                <p><i class="fas fa-phone"></i> Telefone:</p>
-                <p class="light"><a href="tel:+258 82 755 4800">+258 82 755 4800</a></p>
-
-                <p><i class="fas fa-envelope"></i> Email:</p>
-                <p class="light"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-            </div>
-
-            <div class="col s12 l8">
+            <div class="section-grid">
                 <form action="post" netlify name="contacte-nos" class="row">
-                    {% include contact-form/name.html %}
-                    {% include contact-form/email.html %}
-                    {% include contact-form/telephone.html %}
-                    {% include contact-form/subject.html %}
-                    {% include contact-form/message.html %}
-                    {% include contact-form/submit.html %}
+                        {% include contact-form/name.html %}
+                        {% include contact-form/email.html %}
+                        {% include contact-form/telephone.html %}
+                        {% include contact-form/subject.html %}
+                        {% include contact-form/message.html %}
+                        {% include contact-form/submit.html %}
                 </form>
+
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.faamoz.org%2F&width=146&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=1034422419934923" width="146" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
     </div>
