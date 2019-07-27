@@ -17,5 +17,7 @@ parceiro:
     image: /assets/uploads/rededacrianca-logo.png
   - company: Rede Came
     image: /assets/uploads/redecame.jpeg
+  - company: Plataforma de Protecção Social
+    image: /assets/uploads/pscm-pslogo.png
 ---
 
