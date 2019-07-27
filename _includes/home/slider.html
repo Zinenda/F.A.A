@@ -1,6 +1,6 @@
 <div class="slider">
     <ul class="slides">
-        {% for item in site.slider limit: 4 %}
+        {% for item in site.slider.first.slide limit: 4 %}
             <li>
                 <img src="{{ item.image }}" alt="{{ item.title }}">
             </li>

@@ -15,8 +15,12 @@ collections:
     folder: "collections/_slider"
     create: true
     fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Slides", name: "title", default: "Slides", widget: "string"}
+      - label: "slide"
+        name: "slide"
+        widget: "list"
+        fields:
+          - {label: "Imagem", name: "image", widget: "image"}
 
   - label: "Perfil"
     name: "perfil"
@@ -53,6 +57,21 @@ collections:
     fields:
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
       - {label: "Categoria", name: "category", default: "noticias", widget: "hidden"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Fotografia", name: "image", widget: "image"}
+      - {label: "Artigo", name: "body", widget: "markdown"}
+
+  - label: "Realizações"
+    name: "realizacoes"
+    folder: "collections/_posts/realizacoes"
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Categoria", name: "category", default: "realizacoes", widget: "hidden"}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Fotografia", name: "image", widget: "image"}
