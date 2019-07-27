@@ -3,5 +3,19 @@ title: Parceiros
 parceiro:
   - company: Pathfinder International
     image: /assets/uploads/pathfinder.svg
+  - company: Governo da Republica de Moçambique
+    image: /assets/uploads/emblem_of_mozambique.png
+  - company: ActionAid
+    image: /assets/uploads/actionaidlogo.svg
+  - company: PAANE
+    image: /assets/uploads/paane.jpg
+  - company: ECLT Foundation
+    image: /assets/uploads/ecltfoundtion.png
+  - company: Forum Mulher
+    image: /assets/uploads/forummulher.png
+  - company: Rede Criança
+    image: /assets/uploads/rededacrianca-logo.png
+  - company: Rede Came
+    image: /assets/uploads/redecame.jpeg
 ---
 
