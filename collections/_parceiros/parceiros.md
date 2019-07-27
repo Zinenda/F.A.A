@@ -19,5 +19,9 @@ parceiro:
     image: /assets/uploads/redecame.jpeg
   - company: Plataforma de Protecção Social
     image: /assets/uploads/pscm-pslogo.png
+  - company: ROSC
+    image: /assets/uploads/rosc-logo.png
+  - company: CECAP
+    image: /assets/uploads/logo3-cecap-posit.png
 ---
 
