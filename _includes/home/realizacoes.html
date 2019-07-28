@@ -1,7 +1,32 @@
-<section id="realizacoes" class="section scrollspy">
+<section id="realizacoes" class="section scrollspy grey lighten-4">
     <div class="container">
+        <h5 class="primary-color-text bolder center-align">Realizações</h5>
         <section class="section-grid">
-            
+            {% for item in site.categories.realizacoes limit: 6 %}
+                <div class="card-panel-hoverable">
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <img src="{{ item.image }}?nf_resize=fit&w=200" alt="{{ item.title }}">
+                        </div>
+
+                        <span class="hide-on-small-only">|</span>
+
+                        <div class="col s12 l8">
+                            <p class="primary-color-text">{{ item.title }}</p>
+
+                            <div class="light text-justified">
+                                {{ item.content | truncatewords: 20 }}
+                            </div>
+                            <br>
+                            <a href="{{ item.url }}" class="btn-flat waves-effect waves-primary">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </section>
+
+        <div class="center">
+            <a href="/realizacoes/" title="Realiações" class="btn waves-effect waves-light">Veja Mais</a>
+        </div>
     </div>
 </section>
