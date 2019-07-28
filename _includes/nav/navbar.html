@@ -1,32 +1,29 @@
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
-            <div class="container">
-                <a href="/" class="brand-logo bolder" title="{{ site.title }}">
-                    <img src="{{ site.image }}?nf_resize=fit&w=60" style="width: 60px; padding-top: 10px;" alt="{{ site.title }}">
-                </a>
-                
-                <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="/" title="Página Ínicial"><i class="fas fa-home"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-trigger" data-target="sobreDropdown">
-                            Sobre <i class="fas fa-xs fa-chevron-down"></i>
-                        </a>
-                    </li>
-
-                    {% include nav/nav.html %}
-
-                    <li>
-                        <a href="#doar" title="Doe" class="btn waves-effect waves-light modal-trigger">Doe</a>
-                    </li>
-                </ul>
-            </div>
+            <a href="/" class="brand-logo bolder" title="{{ site.title }}">
+                <img src="{{ site.image }}?nf_resize=fit&w=60" style="width: 60px; padding-top: 10px; padding-left: 10px;" alt="{{ site.title }}">
+            </a>
             
+            <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+
+            <ul class="right hide-on-med-and-down" style="padding-left: 10px;">
+                <li>
+                    <a href="/" title="Página Ínicial"><i class="fas fa-home"></i></a>
+                </li>
+
+                <li>
+                    <a href="#" class="dropdown-trigger" data-target="sobreDropdown">
+                        Sobre <i class="fas fa-xs fa-chevron-down"></i>
+                    </a>
+                </li>
+
+                {% include nav/nav.html %}
+
+                <li>
+                    <a href="#doar" title="Doe" class="btn waves-effect waves-light modal-trigger">Doe</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </div>
