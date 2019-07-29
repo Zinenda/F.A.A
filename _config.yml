@@ -25,6 +25,7 @@ collections:
   galeria:
   parceiros:
   realizacoes:
+  dbancarios:
 
 sass:
   sass_dir: assets/_sass

@@ -111,3 +111,13 @@ collections:
         fields:
           - {label: "Empresa", name: "company", widget: "string"}
           - {label: "Logotipo", name: "image", widget: "image"}
+
+  - label: "Dados Bancários"
+    name: "dbancarios"
+    folder: "collecions/_dbancarios"
+    create: true
+    fields:
+      - {label: "Nome do Banco", name: "title", widget: "string"}
+      - {label: "Número de Conta", name: "number", widget: "number"}
+      - {label: "NIB", name: "nib", widget: "number"}
+      - {label: "NIF", name: "nif", widget: "number"}
