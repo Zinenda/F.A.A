@@ -1,16 +1,27 @@
 <section class="section scrollspy" id="sobre">
-    <div class="container">
-        <div class="row">
-            <article class="col s12 l8">
-                {% for item in site.sobre limit: 1 %}
-                    <h5 class="bolder primary-color-text">{{ site.description }}</h5>
-                    <div class="light text-justified">
-                        {{ item.content }}
-                    </div>
-                {% endfor %}
-            </article>
+    <div class="row">
+        <section class="col s12 l3">
+                {% for item in site.sobre reversed offset: 3 limit: 2 %}
+                    <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
+                        <p class="bolder">{{ item.title }}</p>
 
-            <section class="col s12 l4">
+                        <div class="light text-justified">
+                            {{ item.content }}
+                        </div>
+                    </div>
+                {% endfor %}  
+        </section>
+
+        <article class="col s12 l6">
+            {% for item in site.sobre limit: 1 %}
+                <h5 class="bolder primary-color-text center-align">{{ site.description }}</h5>
+                <div class="light text-justified">
+                    {{ item.content }}
+                </div>
+            {% endfor %}
+        </article>
+
+            <section class="col s12 l3">
                 {% for item in site.sobre offset: 1 limit: 2 %}
                     <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
                         <p class="bolder">{{ item.title }}</p>
@@ -29,7 +40,6 @@
                 <a href="{{ item.perfil }}" title="{{ item.title }}" class="btn-flat btn waves-effect waves-light"><i class="far fa-file-pdf"></i> Nosso Perfil</a>
             {% endfor %}
         </div>
-    </div>
 </section>
 
 <section id="sobreModal" class="modal">

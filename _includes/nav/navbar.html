@@ -12,12 +12,6 @@
                     <a href="/" title="Página Ínicial"><i class="fas fa-home"></i></a>
                 </li>
 
-                <li>
-                    <a href="#" class="dropdown-trigger" data-target="sobreDropdown">
-                        Sobre <i class="fas fa-xs fa-chevron-down"></i>
-                    </a>
-                </li>
-
                 {% include nav/nav.html %}
 
                 <li>
@@ -27,29 +21,3 @@
         </div>
     </nav>
 </div>
-
-<ul id="sobreDropdown" class="dropdown-content">
-    <li>
-        <a href="#sobre" title="Quem Somos" class="waves-effect waves-light">Quem Somos</a>
-    </li>
-
-    {% for item in site.sobre offset: 1 %}
-        <li>
-            <a href="#{{ forloop.index }}" class="modal-trigger waves-effect waves-light">{{ item.title }}</a>
-        </li>
-    {% endfor %}
-</ul>
-
-{% for item in site.sobre offset: 1 %}
-    <div id="{{ forloop.index }}" class="modal">
-        <div class="container modal-content">
-            <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
-                <p class="bolder">{{ item.title }}</p>
-
-                <div class="light text-justified">
-                    {{ item.content }}
-                </div>
-            </div>
-        </div>
-    </div>
-{% endfor %}
