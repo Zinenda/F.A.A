@@ -8,50 +8,75 @@ $(document).ready(function(){
 	$('.scrollspy').scrollSpy();
 	$('.fixed-action-btn').floatingActionButton();
 
-	var owl = $('.owl-carousel');
-	owl.owlCarousel({
-		loop:true,
-		nav:true,
-		margin:10,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:2
-			},            
-			960:{
-				items:3
-			},
-			1200:{
-				items:4
-			}
+	$('.slick-responsive').slick({
+	dots: true,
+	infinite: false,
+	speed: 300,
+	slidesToShow: 4,
+	slidesToScroll: 4,
+	responsive: [
+		{
+		breakpoint: 1024,
+		settings: {
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			infinite: true,
+			dots: true
 		}
-	});
-	owl.on('mousewheel', '.owl-stage', function (e) {
-		if (e.deltaY>0) {
-			owl.trigger('next.owl');
-		} else {
-			owl.trigger('prev.owl');
+		},
+		{
+		breakpoint: 600,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 2
 		}
-		e.preventDefault();
+		},
+		{
+		breakpoint: 480,
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1
+		}
+		}
+	]
 	});
 
-	var owl = $('.owl-carousel .parceiros-carousel');
-	owl.owlCarousel({
-		items:6,
-		loop:true,
-		margin:2,
-		autoplay:true,
-		autoplayTimeout:2000,
-		autoplayHoverPause:true
-	});
-	$('.play').on('click',function(){
-		owl.trigger('play.owl.autoplay',[1000])
-	})
-	$('.stop').on('click',function(){
-		owl.trigger('stop.owl.autoplay')
-	})
+	$('.slick-clientes').slick({
+		dots: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		slidesToShow: 6,
+		slidesToScroll: 3,
+		responsive: [
+		  {
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 5,
+			  slidesToScroll: 3,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 600,
+			settings: {
+			  slidesToShow: 4,
+			  slidesToScroll: 2
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 3,
+			  slidesToScroll: 1
+			}
+		  }
+		  // You can unslick at a given breakpoint now by adding:
+		  // settings: "unslick"
+		  // instead of a settings object
+		]
+	  });
 
 	var $container = $('#masonry-grid');
     // initialize
