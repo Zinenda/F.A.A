@@ -6,7 +6,7 @@ parceiro:
   - company: Governo da Republica de Moçambique
     image: /assets/uploads/emblem_of_mozambique.png
   - company: ActionAid
-    image: /assets/uploads/actionaidlogo.svg
+    image: /assets/uploads/act-ionaid.jpg
   - company: PAANE
     image: /assets/uploads/paane.jpg
   - company: ECLT Foundation
