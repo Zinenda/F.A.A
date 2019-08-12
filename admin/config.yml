@@ -120,4 +120,4 @@ collections:
       - {label: "Nome do Banco", name: "title", widget: "string"}
       - {label: "Número de Conta", name: "number", widget: "number"}
       - {label: "NIB", name: "nib", widget: "number"}
-      - {label: "NIF", name: "nif", widget: "number"}
+      - {label: "IBAN", name: "nif", widget: "string"}
