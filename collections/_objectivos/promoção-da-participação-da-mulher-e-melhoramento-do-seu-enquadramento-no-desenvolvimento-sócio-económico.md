@@ -1,7 +1,5 @@
 ---
-title: >-
-  Promoção da participação da mulher e melhoramento do seu enquadramento no
-  desenvolvimento sócio-económico
+title: Apoio a iniciativas locais para Empoderamento Economico da Mulher
 image: /assets/uploads/img_9926.jpg
 ---
 
