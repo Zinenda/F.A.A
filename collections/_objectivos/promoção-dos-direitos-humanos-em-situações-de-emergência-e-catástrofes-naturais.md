@@ -1,7 +1,5 @@
 ---
-title: >-
-  Promoção dos direitos humanos em situações de emergência e catástrofes
-  naturais
+title: Promoção dos direitos da criança à educação
 image: /assets/uploads/img-20190621-wa0107.jpg
 ---
 
