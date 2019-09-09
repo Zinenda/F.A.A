@@ -2,8 +2,7 @@ title: FAA
 email: info@faa.org.mz
 description: >- # this means to ignore newlines until "baseurl:"
   Fundação Apoio Amigo
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://faa.org.mz"
 author: Ivo Zinenda
 
 # Build settings
@@ -32,7 +31,7 @@ sass:
   style: compressed
 
 image: /assets/img/logotipo.png
-color: "#011826"
+color: "#2D56A3"
 
 pagination:
   enabled: true

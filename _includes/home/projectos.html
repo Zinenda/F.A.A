@@ -4,7 +4,7 @@
 
         <div class="section-grid">
             {% for item in site.categories.projectos limit: 3 %}
-                <article class="card-panel white-text z-depth-3 hoverable" style="background-color: rgb(1, 24, 38);">
+                <article class="card-panel white-text z-depth-3 hoverable" style="background-color: {{ site.color }};">
                     <p class="bolder">{{ item.title }}</p>
                     <span class="light grey-text text-lighten-1">Publicado {{ item.date | date_to_string }}</span>
                     <div class="light">
