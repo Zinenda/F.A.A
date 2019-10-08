@@ -1,0 +1,15 @@
+- title: Facebook
+  url: https://web.facebook.com/www.faamoz.org/
+  icon: facebook-f
+
+- title: Facebook Messenger
+  url: https://m.me/www.faamoz.org/
+  icon: facebook-messenger
+
+- title: Telefone Celular
+  url: tel:+258 86 311 2005
+  icon: phone
+
+- title: Email
+  url: mailto:info@faa.org.mz
+  icon: envelope
