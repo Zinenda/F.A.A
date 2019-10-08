@@ -8,13 +8,11 @@ pagination:
 
 <section class="section">
     <div class="container">
-        <div id="masonry-grid" class="row">
+        <div class="section-grid">
             {% for item in paginator.posts %}
-                <div class="col s6 l3">
-                    <a href="{{ item.image }}" data-lightbox="{{ page.title }}" data-title="{{ item.title }}" data-alt="{{ item.title }}">
-                        <img src="{{ item.image }}?nf_resize=fit&w=200 1x" srcset="{{ item.image }}?nf_resize=fit&w=320 2x">
-                    </a>
-                </div>
+                <a href="{{ item.image }}?nf_resize=fit&w=720" data-lightbox="{{ page.title }}" data-title="{{ item.title }}" data-alt="{{ item.title }}">
+                    <img data-src="{{ item.image }}?nf_resize=smartcrop&w=300" class="lazy">
+                </a>
             {% endfor %}
         </div>
 

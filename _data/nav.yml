@@ -7,21 +7,14 @@
 - title: Projectos
   url: "#projectos"
 
-- title: Noticias
-  url: "#noticias"
-
 - title: Realizações
   url: "#realizacoes"
 
 - title: Histórias de Sucesso
   url: "#sucessos"
 
-- title: Galeria
-  url: /galeria/
-
 - title: Parceiros
   url: "#parceiros"
 
-- title: Contactos
-  url: "#contactos"
-  modal: true
+- title: Galeria
+  url: /galeria/

@@ -1,19 +1,16 @@
-{% if page.layout == "default" %}
-	<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-{% endif %}
-
-{% include aos.html %}
+<!--
+	{% if page.layout == "default" %}
+		<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{% endif %}
+-->
 
 <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+<script defer src="/assets/js/lazyloading.js"></script>
+
 {% if page.layout == "default" %}
 	{% include home/slick-carousel.html %}
-{% endif %}
-
-{% if page.title == "Galeria" %}
-	<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	{% include lightbox.html %}
 {% endif %}
 
 <script defer src="/assets/js/main.js"></script>
