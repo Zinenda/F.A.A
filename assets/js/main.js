@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	$('.sidenav').sidenav();
+	$('.tooltipped').tooltip();
+	$(".dropdown-trigger").dropdown();
 	$('.modal').modal();
 	$('.slider').slider({
 		height: 600

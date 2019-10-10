@@ -1,6 +1,3 @@
-- title: Sobre
-  url: "#sobre"
-
 - title: Objectivos
   url: "#objectivos"
 
@@ -18,6 +15,10 @@
 
 - title: Contactos
   url: "#contactos"
+  modal: true
+
+- title: Notícias
+  url: /galeria/
 
 - title: Galeria
   url: /galeria/

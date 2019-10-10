@@ -1,42 +1,23 @@
-<section class="section scrollspy" id="sobre">
-    <div class="row">
-        <section class="col s12 l3">
-                {% for item in site.sobre reversed offset: 3 limit: 2 %}
-                    <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
-                        <p class="bolder">{{ item.title }}</p>
+{% for item in site.sobre limit: 1 %}
+    <div id="QuemSomos" class="modal">
+        <div class="container modal-content">
+            <p class="bolder primary-color-text">{{ item.title }}</p>
 
-                        <div class="light">
-                            {{ item.content }}
-                        </div>
-                    </div>
-                {% endfor %}  
-        </section>
-
-        <article class="col s12 l6">
-            {% for item in site.sobre limit: 1 %}
-                <h5 class="bolder primary-color-text center-align">{{ site.description }}</h5>
-                <div class="light text-justified">
-                    {{ item.content }}
-                </div>
-            {% endfor %}
-        </article>
-
-            <section class="col s12 l3">
-                {% for item in site.sobre offset: 1 limit: 2 %}
-                    <div class="card-panel white-text hoverable" style="background-color: {{ site.color }};">
-                        <p class="bolder">{{ item.title }}</p>
-
-                        <div class="light">
-                            {{ item.content }}
-                        </div>
-                    </div>
-                {% endfor %}  
-            </section>
+            <div class="light text-justified grey-text text-darken-4">
+                {{ item.content }}
+            </div>
         </div>
+    </div>
+{% endfor %}
 
-        <div class="center">
-            {% for item in site.perfil limit: 1 %}
-                <a href="{{ item.perfil }}" title="{{ item.title }}" class="btn waves-effect waves-light"><i class="far fa-file-pdf"></i> Nosso Perfil</a>
-            {% endfor %}
+{% for item in site.sobre %}
+    <div id="Sobre-{{ item.title }}" class="modal">
+        <div class="container modal-content">
+            <p class="bolder primary-color-text">{{ item.title }}</p>
+
+            <div class="light text-justified grey-text text-darken-4">
+                {{ item.content }}
+            </div>
         </div>
-</section>
+    </div>
+{% endfor %}

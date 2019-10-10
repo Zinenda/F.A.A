@@ -114,7 +114,7 @@ collections:
 
   - label: "Dados Bancários"
     name: "dbancarios"
-    folder: "collecions/_dbancarios"
+    folder: "collections/_dbancarios"
     create: true
     fields:
       - {label: "Nome do Banco", name: "title", widget: "string"}

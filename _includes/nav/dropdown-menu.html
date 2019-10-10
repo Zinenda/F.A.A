@@ -1,0 +1,7 @@
+<ul id="sobreDropdown" class="dropdown-content">
+    {% for item in site.sobre %}
+        <li>
+            <a href="#Sobre-{{ item.title }}" class="modal-trigger waves-effect waves-primary" title="{{ item.title }}">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

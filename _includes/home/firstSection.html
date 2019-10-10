@@ -1,0 +1,59 @@
+<section class="section">
+    <div class="container">
+        <div class="section-grid">
+            {% for item in site.sobre limit: 1 %}
+                <div class="card-panel white-text z-depth-3 hoverable" style="background-color: {{ site.color }};">
+                    <p class="bolder">{{ item.title }} <br> {{ site.description }}</p>
+    
+                    <div class="light text-justified">
+                        {{ item.content | truncatewords : 20 }}
+                    </div>
+    
+                    <a href="#QuemSomos" class="btn-flat waves-effect waves-primary white-text modal-trigger" title="Sobre">Saiba Mais</a>
+                    <a href="/assets/uploads/perfilfaa.pdf" class="btn waves-effect waves-light" title="Perfil">
+                        <i class="fas fa-file-pdf"></i> Nosso Perfil
+                    </a>
+                </div>
+            {% endfor %}
+    
+            {% for item in site.realizacoes limit: 1 %}
+                <div class="card-panel white-text z-depth-3 hoverable" style="background-color: {{ site.color }};">
+                    <p class="bolder">Realizações <br> {{ item.title }}</p>
+    
+                    <div class="light text-justified">
+                        {{ item.content | truncatewords : 20 }}
+                    </div>
+    
+                    <a href="#realizacoes{{ item.title }}" class="btn-flat waves-effect waves-primary white-text modal-trigger" title="Sobre">Leia Mais</a>
+                    <a href="/realizacoes/" class="btn waves-effect waves-light" title="Realizações">Saiba Mais</a>
+                </div>
+            {% endfor %}
+    
+            {% for item in site.sucessos limit: 1 %}
+                <div class="card-panel white-text z-depth-3 hoverable" style="background-color: {{ site.color }};">
+                    <p class="bolder">Histórias de Sucesso <br> {{ item.title }}</p>
+    
+                    <div class="light text-justified">
+                        {{ item.content | truncatewords : 20 }}
+                    </div>
+    
+                    <a href="#sucessos{{ item.title }}" class="btn-flat waves-effect waves-primary white-text modal-trigger" title="Histórias de Sucesso">Leia Mais</a>
+                    <a href="/sucessos/" class="btn waves-effect waves-light" title="Realizações">Saiba Mais</a>
+                </div>
+            {% endfor %}
+    
+            {% for item in site.categories.noticias limit: 1 %}
+                <div class="card-panel white-text z-depth-3 hoverable" style="background-color: {{ site.color }};">
+                    <p class="bolder">Últimas Notícias <br> {{ item.title }}</p>
+    
+                    <div class="light text-justified">
+                        {{ item.content | truncatewords : 20 }}
+                    </div>
+    
+                    <a href="{{ item.url }}" class="btn-flat waves-effect waves-primary white-text" title="{{ item.title }}">Leia Mais</a>
+                    <a href="/noticias/" class="btn waves-effect waves-light" title="Noticias">Saiba Mais</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -7,29 +7,7 @@
             
             <a href="#" data-target="sideNav" class="sidenav-trigger primary-color-text"><i class="fas fa-lg fa-bars"></i></a>
 
-            <ul class="right">
-                <li>
-                    <a href="#localizacao" class="modal-trigger btn-floating waves-effect waves-circle waves-light">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </a>
-                </li>
-
-                {% for item in site.data.social limit: 2 %}
-                    <li>
-                        <a href="{{ item.url }}" class="btn-floating waves-effect waves-circle waves-light" title="{{ item.title }}">
-                            <i class="fab fa-{{ item.icon }}"></i>
-                        </a>
-                    </li>
-                {% endfor %}
-
-                {% for item in site.data.social offset: 2 %}
-                    <li>
-                        <a href="{{ item.url }}" class="btn-floating waves-effect waves-circle waves-light" title="{{ item.title }}">
-                            <i class="fas fa-{{ item.icon }}"></i>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+            {% include nav/nav-wrapper.html %}
         </div>
     </div>
     
@@ -37,15 +15,18 @@
         <div class="container">
             <ul class="hide-on-med-and-down">
                 <li>
-                    <a href="/" title="Página Ínicial primary-color-text"><i class="fas fa-home"></i></a>
+                    <a href="/" title="Página Ínicial"><i class="fas fa-home"></i></a>
+                </li>
+
+                <li>
+                    <a class="dropdown-trigger" href="#!" data-target="sobreDropdown">Sobre <i class="fas fa-caret-down"></i></a>
                 </li>
     
                 {% include nav/nav.html %}
-    
-                <li>
-                    <a href="#doar" title="Doe" class="btn waves-effect waves-light modal-trigger">Doe</a>
-                </li>
+
             </ul>
+
+            {% include nav/dropdown-menu.html %}
         </div>
     </div>
 </nav>

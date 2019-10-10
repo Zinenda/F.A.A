@@ -1,5 +1,5 @@
 ---
-title: Sobre
+title: Quem Somos
 ---
 Somos uma Organização Não-Governamental Moçambicana, sem fins lucrativos, que integra todos os cidadãos, sem distinção da cor da pele, raça, sexo, tribo, etnia, classe social ou religião. É uma pessoa colectiva, com autonomia administrativa, financeira e patrimonial e goza de personalidade jurídica própria, fundada no ano de 2000, por um grupo de cidadãos de Tete mobilizados e solidários aquando das cheias ocorridas naquele ano.
 
