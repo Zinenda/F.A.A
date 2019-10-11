@@ -1,4 +1,29 @@
 <aside id="sideNav" class="sidenav">
+    <img data-src="{{ site.image }}?nf_resize=fit&w=300" alt="Logotipo" class="lazy">
+
+    <div class="divider"></div>
+    
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#doar" title="Doe" class="btn waves-effect waves-primary modal-trigger">Doe</a>
+            </li>
+        </ul>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">Sobre</div>
+                <ul class="collapsible-body">
+                    {% for item in site.sobre %}
+                        <li>
+                            <a href="#Sobre-{{ item.title }}" class="modal-trigger waves-effect waves-primary" title="{{ item.title }}">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <ul>
         {% include nav/nav.html %}
     </ul>

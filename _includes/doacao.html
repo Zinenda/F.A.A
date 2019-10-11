@@ -1,55 +1,14 @@
 <section id="doar" class="modal">
     <div class="container modal-content">
-        <h6 class="primary-color-text center-align bolder">Gostaria de Apoiar-nos?</h6>
+        <h6 class="primary-color-text bolder">Gostaria de Apoiar-nos?</h6>
 
-        <table class="responsive-table striped highlight">
-            <thead>
-                <tr>
-                    <th>Nome do Banco</th>
-                    <th>Nº de Conta</th>
-                    <th>NIB</th>
-                    <th>NIF</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                {% for item in site.dbancarios %}
-                    <tr>
-                        <td>{{ item.title }}</td>
-                        <td>{{ item.number }}</td>
-                        <td>{{ item.nib }}</td>
-                        <td>{{ item.nif }}</td>              
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-</section>
-
-<section id="doacao" class="modal">
-    <div class="container modal-content">
-        <h6 class="primary-color-text center-align bolder">Gostaria de Apoiar-nos?</h6>
-
-        <table class="responsive-table striped highlight">
-            <thead>
-                <tr>
-                    <th>Nome do Banco</th>
-                    <th>Nº de Conta</th>
-                    <th>NIB</th>
-                    <th>NIF</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                {% for item in site.dbancarios %}
-                    <tr>
-                        <td>{{ item.title }}</td>
-                        <td>{{ item.number }}</td>
-                        <td>{{ item.nib }}</td>
-                        <td>{{ item.nif }}</td>              
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        {% for item in site.dbancarios %}
+                    
+            <p><strong>Banco:</strong> <em>{{ item.title }}</em></p>
+            <p><strong>Conta:</strong> <em>{{ item.number }}</em></p>
+            <p><strong>NIB:</strong> <em>{{ item.nib }}</em></p>
+            <p><strong>NIF:</strong> <em>{{ item.nif }}</em></p>            
+                    
+        {% endfor %}
     </div>
 </section>

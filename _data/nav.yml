@@ -5,10 +5,10 @@
   url: "#projectos"
 
 - title: Realizações
-  url: "#realizacoes"
+  url: /realizacoes/
 
 - title: Histórias de Sucesso
-  url: "#sucessos"
+  url: /sucessos/
 
 - title: Parceiros
   url: "#parceiros"
@@ -18,7 +18,7 @@
   modal: true
 
 - title: Notícias
-  url: /galeria/
+  url: /noticias/
 
 - title: Galeria
   url: /galeria/

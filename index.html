@@ -13,27 +13,17 @@ lang: pt
 
 {% include home/objectivos.html %}
 
-<section id="bg-image">
-    <style>
-        #bg-image {
-            background-image: url(/assets/uploads/Faa.png);
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 20vh;
-        }
-    </style>
+<style>
+    .parallax-container {
+        height: 20vh;
+    }
+</style>
 
-    <div class="container">
-        <div class="right hide-on-small-only">
-            <p class="bolder white-text">"O Bem estar das crianças <br> de hoje está inseparavelmente <br> ligado à paz do mundo <br> amanhã"</p>
-        </div>
-
-        <div class="center hide-on-med-and-up">
-            <p class="bolder white-text">"O Bem estar das crianças <br> de hoje está inseparavelmente <br> ligado à paz do mundo <br> amanhã"</p>
-        </div>
+<div class="parallax-container">
+    <div class="parallax">
+        <img data-src="/assets/uploads/img_9930.jpg?nf_resize=fit&w=1920" class="lazy" alt="">
     </div>
-</section>
+</div>
 
 {% include home/projectos.html %}
 

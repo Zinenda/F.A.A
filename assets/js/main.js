@@ -2,7 +2,9 @@ $(document).ready(function(){
 	$('.sidenav').sidenav();
 	$('.tooltipped').tooltip();
 	$(".dropdown-trigger").dropdown();
+	$('.collapsible').collapsible();
 	$('.modal').modal();
+	$('.parallax').parallax();
 	$('.slider').slider({
 		height: 600
 	});

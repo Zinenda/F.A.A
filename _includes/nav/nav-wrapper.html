@@ -1,13 +1,13 @@
 <ul class="right">
     <li>
-        <a href="#localizacao" class="modal-trigger btn-floating waves-effect waves-circle waves-light tooltipped" data-position="top" data-tooltip="{{ item.title }}">
+        <a href="#localizacao" class="modal-trigger btn-floating waves-effect waves-circle waves-light tooltipped" data-position="bottom" data-tooltip="Localização">
             <i class="fas fa-map-marker-alt"></i>
         </a>
     </li>
 
     {% for item in site.data.social limit: 2 %}
         <li>
-            <a href="{{ item.url }}" class="btn-floating waves-effect waves-circle waves-light tooltipped" data-position="top" data-tooltip="{{ item.title }}" title="{{ item.title }}">
+            <a href="{{ item.url }}" class="btn-floating waves-effect waves-circle waves-light tooltipped" data-position="bottom" data-tooltip="{{ item.title }}" title="{{ item.title }}">
                 <i class="fab fa-{{ item.icon }}"></i>
             </a>
         </li>
@@ -15,13 +15,13 @@
 
     {% for item in site.data.social offset: 2 %}
         <li>
-            <a href="{{ item.url }}" class="btn-floating waves-effect waves-circle waves-light tooltipped" data-position="top" data-tooltip="{{ item.title }}" title="{{ item.title }}">
+            <a href="{{ item.url }}" class="btn-floating waves-effect waves-circle waves-light tooltipped" data-position="bottom" data-tooltip="{{ item.title }}" title="{{ item.title }}">
                 <i class="fas fa-{{ item.icon }}"></i>
             </a>
         </li>
     {% endfor %}
 
     <li>
-        <a href="#doar" title="Doe" class="btn waves-effect waves-light modal-trigger">Doe</a>
+        <a href="#doar" title="Doe" class="btn waves-effect waves-light modal-trigger hide-on-med-and-down">Doe</a>
     </li>
 </ul>

@@ -1,15 +1,23 @@
 <section class="section scrollspy" id="objectivos">
-    <div class="container">
-        <h5 class="primary-color-text bolder center-align">Objectivos</h5>
-        <p class="light center-align">O principal objectivo da FAA definidos nos seus estatutos é de contríbuir para o <br> desenvolvimento sócio-económico das comunidades através de:</p>
-
-        <div class="slick-responsive">
-            {% for item in site.objectivos %}
-                <div style="padding-left: 5px;">
-                    <img src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}">
-                    <p class="primary-color-text" style="font-size: 12px">{{ item.title }}</p>
+    <div class="row">
+        <div class="col s12 l5 white-text">
+            <div class="card-panel" style="background-image: url(/assets/uploads/Faa.png?nf_resize=smartcrop&w=350); background-position: center; background-size: cover;">
+                <div class="container">
+                    <h5 class="bolder center">Objectivos</h5>
+                    <p class="light text-justified">O principal objectivo da FAA definidos nos seus estatutos é de contríbuir para o <br> desenvolvimento sócio-económico das comunidades através de:</p>
                 </div>
-            {% endfor %}
+            </div>
+        </div>
+
+        <div class="col s12 l7">
+            <div class="slick-responsive">
+                {% for item in site.objectivos %}
+                    <div style="padding-left: 10px;">
+                        <img src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}">
+                        <p class="primary-color-text" style="font-size: 12px">{{ item.title }}</p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>
