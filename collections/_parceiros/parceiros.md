@@ -10,7 +10,7 @@ parceiro:
   - company: PAANE
     image: /assets/uploads/paane.jpg
   - company: ECLT Foundation
-    image: /assets/uploads/ecltfoundtion.png
+    image: /assets/uploads/ecltfoundationlogo.jpg
   - company: Forum Mulher
     image: /assets/uploads/forummulher.png
   - company: Rede Criança
@@ -24,4 +24,3 @@ parceiro:
   - company: CECAP
     image: /assets/uploads/logo3-cecap-posit.png
 ---
-
