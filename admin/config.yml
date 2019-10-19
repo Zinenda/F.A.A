@@ -87,12 +87,38 @@ collections:
     fields:
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
       - {label: "Categoria", name: "category", default: "sucessos", widget: "hidden"}
-      - {label: "Beneficiário", name: "title", widget: "string"}
-      - {label: "Idade", name: "age", widget: "string"}
-      - {label: "Projecto", name: "project", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Fotografia", name: "image", widget: "image"}
-      - {label: "Artigo", name: "body", widget: "markdown"}
+      - {label: "Projecto e Beneficiario", name: "title", widget: "string"}
+      - label: "Beneficiário"
+        name: "beneficiary"
+        widget: "object"
+        fields:
+          - {label: "Nome", name: "name", widget: "string"}
+          - label: "Fotografias"
+            name: "photographies"
+            widget: "list"
+              - {label: "Fotos", name: "photos", widget: "image"}
+          - label: "Ano de Nascimento"
+            name: "birthyear"
+            widget: "date"
+            default: ""
+            format: "YYYY"
+          - {label: "Ocupação", name: "ocupation", widget: "string"}
+          - label: "Povoado"
+            name: "village"
+            widget: "object"
+            fields: 
+              - {label: "Povoado", name: "region", widget: "string"}
+              - {label: "Localidade", name: "location", widget: "string"}
+              - {label: "Distrito", name: "district", widget: "string"}
+          - {label: "Filhos", name: "children", widget: "text"}
+          - {label: "Área de Trabalho", name: "workingArea", widget: "text"}
+          - {label: "Experiência", name: "experience", widget: "text"}
+          - {label: "Respectiva", name: "respective", widget: "text"}
+          - {label: "Planos para Futuro", name: "futurePlans", widget: "text"}
+          - {label: "Desafios", name: "challenges", widget: "text"}
+          - {label: "Conselhos", name: "advices", widget: "text"}
+
+
 
   - label: "Projectos"
     name: "projectos"
