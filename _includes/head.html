@@ -11,11 +11,13 @@
     <link rel="shortcut icon" href="{{ site.image }}?nf_resize=fit&w=32" type="image/x-icon">
     <link rel="apple-touch-icon" href="{{ site.image }}?nf_resize=fit&w=160">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,900&display=swap" rel="stylesheet">
-
     <!--
         {% if page.layout == "default" %}
             {% include sweetalert.html %}
         {% endif %}
     -->
+
+    {% if page.layout == "default" %}
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
 </head>
