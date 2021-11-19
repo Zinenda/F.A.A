@@ -93,10 +93,7 @@ collections:
         widget: "object"
         fields:
           - {label: "Nome", name: "name", widget: "string"}
-          - label: "Fotografias"
-            name: "photographies"
-            widget: "list"
-              - {label: "Fotos", name: "photos", widget: "image"}
+          - {label: "Fotografia", name: "photography", widget: "image"}
           - label: "Ano de Nascimento"
             name: "birthyear"
             widget: "date"
