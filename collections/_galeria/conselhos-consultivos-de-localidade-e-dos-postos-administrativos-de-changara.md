@@ -1,4 +1,4 @@
 ---
-title: Conselhos Consultivos de Localidade e dos Postos Administrativos de Changara
-image: /assets/uploads/captura-de-ecrã-2021-11-16-165046-cópia.png
+title: "Projecto RETRAIA apoia abertura de furos de água em GAMA e Chokwe "
+image: /assets/uploads/furo-de-agua-3.jpg
 ---
