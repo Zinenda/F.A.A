@@ -1,7 +1,7 @@
 ---
 layout: post
 category: noticias
-title: O Projecto RETRAIA financia a abertura de Furos de Água em Gama e Chokwe
+title: Projecto RETRAIA financia a abertura de Furos de Água em Gama e Chokwe
 date: 2021-05-14T10:54:26.307Z
 image: /assets/uploads/furo-de-agua-3.jpg
 ---
