@@ -1,5 +1,5 @@
 ---
-title: "No âmbito do Projecto RETRAIA, a FAA faz entrega de máquinas de costura
-  na EP1 de Chokwe "
-image: /assets/uploads/maquina-de-costura-3.jpg
+title: Mecanismo de coordenação do PAANE ao nível de Tete recebe equipa de
+  monitoria da UE e do GON
+image: /assets/uploads/20211122_104509.jpg
 ---
